@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>myProjects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="/static/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body data-bs-theme="dark">
+
+    <!-- SIDEBAR -->
+     <div class="leftBar">
+      <span class="expandBar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">❯</span>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">myProjects</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Your projects</p>
+          <p>project 1</p>
+          <p>pojrect 2</p>
+          <br>
+          <button class="newProjectButton">Create New Project</button>
+          <button class="logoutButton">Log out</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="appDiv">
+
+      <div class="toBeDone">
+        <p class="itemTitle">TO BE DONE</p>
+        <div class="tasksToBeDone">
+
+        </div>
+      </div>
+
+      <div class="inProgress">
+        <p class="itemTitle">IN PROGRESS</p>
+        <div class="tasksInProgress">
+
+        </div>
+      </div>
+      
+      <div class="done">
+        <p class="itemTitle">DONE</p>
+        <div class="tasksDone">
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <script src="/static/script.js" type="module"></script>
+</html>

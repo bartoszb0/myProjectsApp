@@ -1,0 +1,89 @@
+/* Body */
+body {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+/* Sidebar */
+.offcanvas.offcanvas-start {
+    background-color: rgb(27, 27, 27);
+}
+
+.leftBar {
+    background-color: rgb(27, 27, 27);
+    height: 100vh;
+    width: 80px;
+}
+
+.leftBar .expandBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 50px;
+    height: inherit;
+}
+
+.expandBar:hover {
+    background-color: rgb(61, 61, 61);
+    cursor: pointer;
+}
+
+
+/* Button to create new project */
+.newProjectButton {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(32, 32, 32);
+    border: 2px solid rgb(63, 63, 63);
+}
+
+.newProjectButton:hover {
+    cursor: pointer;
+    background-color: rgb(49, 49, 49);
+}
+
+
+/* Logout button */
+.logoutButton {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(97, 54, 54);
+    border: none;
+}
+
+.logoutButton:hover {
+    cursor: pointer;
+    background-color: rgb(92, 30, 30);
+}
+
+
+/* Div for containers next to menu button on the left */
+.appDiv {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.toBeDone, .inProgress, .done {
+    flex: 1;
+    margin-inline: 20px;
+    opacity: 50%;
+    padding: 20px;
+}
+
+.toBeDone {
+    background-color: rgb(138, 138, 138);
+}
+
+.inProgress {
+    background-color: rgb(158, 160, 74);
+}
+
+.done {
+    background-color: rgb(58, 128, 58);
+}
