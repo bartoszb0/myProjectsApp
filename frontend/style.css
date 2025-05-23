@@ -61,12 +61,22 @@ body {
 }
 
 
+/* Parent div for appDiv and contentDiv */
+#mainDiv {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* Div for containers next to menu button on the left */
 .appDiv {
     padding: 40px;
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 100%;
 }
 
 .toBeDone, .inProgress, .done {
@@ -87,3 +97,20 @@ body {
 .done {
     background-color: rgb(58, 128, 58);
 }
+
+/* Description div */
+.contentDiv {
+    display: none; /* This will change to none */
+    height: 40%;
+}
+
+.expandedContent {
+    display: block;
+}
+
+.taskContent {
+    padding: 20px;
+    background-color: rgb(85, 139, 139);
+    height: 100%;
+}
+
